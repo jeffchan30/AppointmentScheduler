@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointmentController">
+   <children>
+      <Label layoutX="300.0" layoutY="21.0" text="Add Appointment">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <VBox layoutX="72.0" layoutY="48.0" prefHeight="270.0" prefWidth="177.0">
+         <children>
+            <Label fx:id="appointmentIDLabel" text="Appointment ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="userIDLabel" text="User ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Customer ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Title">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Description">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Location">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Contact">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Type">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Start Date and Time">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="End Date and Time">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="322.0" layoutY="48.0" prefHeight="379.0" prefWidth="191.0">
+         <children>
+            <TextField fx:id="appointmentIDText">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="userIDText">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="customerIDText">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="titleText">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="descriptionText">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="locationText">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="contactComboBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="typeText">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </TextField>
+            <DatePicker fx:id="startDateDatePicker">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </DatePicker>
+            <DatePicker fx:id="endDateDatePicker">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </DatePicker>
+         </children>
+      </VBox>
+      <ComboBox fx:id="startTimeComboBox" layoutX="541.0" layoutY="351.0" prefWidth="150.0" promptText="Select Time" />
+      <ComboBox fx:id="endTimeComboBox" layoutX="541.0" layoutY="383.0" prefWidth="150.0" promptText="Select Time" />
+      <Button fx:id="saveAddAppointmentButton" layoutX="140.0" layoutY="415.0" mnemonicParsing="false" onAction="#onActionSaveAddAppointmentButton" text="Save" />
+      <Button fx:id="closeAddAppointmentButton" layoutX="372.0" layoutY="415.0" mnemonicParsing="false" onAction="#onActionCloseAddAppointmentButton" text="Close" />
+   </children>
+</AnchorPane>

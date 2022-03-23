@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInController">
+   <children>
+      <Label fx:id="loginLabel" layoutX="159.0" layoutY="75.0" text="Login Panel" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="129.0" layoutY="124.0" prefHeight="95.0" prefWidth="183.0">
+         <children>
+            <TextField fx:id="usernameText" prefHeight="25.0" prefWidth="262.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="passwordText">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button fx:id="exitButton" layoutX="277.0" layoutY="239.0" mnemonicParsing="false" onAction="#onActionExitButton" text="Exit" />
+      <Button fx:id="startButton" layoutX="133.0" layoutY="239.0" mnemonicParsing="false" onAction="#onActionStartButton" text="Start" />
+      <Label fx:id="usernameLabel" alignment="CENTER_RIGHT" layoutX="9.0" layoutY="124.0" prefHeight="20.0" prefWidth="117.0" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="190.0" prefHeight="20.0" prefWidth="117.0" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationLabel" layoutX="32.0" layoutY="345.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ComboBox?>
+<AnchorPane prefHeight="490.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyCustomerController">
+    <children>
+        <Label layoutX="130.0" layoutY="33.0" text="Modify Customer">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <VBox layoutX="45.0" layoutY="95.0" prefHeight="317.0" prefWidth="136.0">
+            <children>
+                <Label text="Customer ID">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Customer Name">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Address">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Postal Code">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Phone Number">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="State/Province">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Country">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="222.0" layoutY="95.0" prefHeight="317.0" prefWidth="136.0">
+            <children>
+                <TextField fx:id="customerIDText">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="customerNameText">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="addressText">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="postalCodeText">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="phoneNumberText">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+            <ComboBox fx:id="stateProvinceComboBox" prefHeight="32.0" prefWidth="91.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="countryComboBox" layoutX="10.0" layoutY="185.0" prefHeight="32.0" prefWidth="91.0" />
+            </children>
+        </VBox>
+        <Button fx:id="saveModifyCustomerButton" layoutX="68.0" layoutY="400.0" mnemonicParsing="false" onAction="#onActionSaveModifyCustomerButton" text="Save" />
+        <Button fx:id="closeModifyCustomerButton" layoutX="257.0" layoutY="400.0" mnemonicParsing="false" onAction="#onActionCloseModifyCustomerButton" text="Close" />
+    </children>
+</AnchorPane>
